@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      uri: http://configserver:8888
+  boot:
+    admin:
+      url: http://monitoradmin:9090
+      
+encrypt:
+  failOnError: false
+  
+eureka:
+  instance:
+    hostname: gateway
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  
