@@ -3,10 +3,10 @@ spring:
     name: gateway
   cloud:
     config:
-      uri: http://configserver:8888
-  boot:
-    admin:
-      url: http://monitoradmin:9090
+      uri: http://localhost:8888
+#  boot:
+#    admin:
+#      url: http://monitoradmin:9090
       
 encrypt:
   failOnError: false
@@ -18,5 +18,5 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   
