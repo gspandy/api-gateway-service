@@ -15,12 +15,15 @@ endpoints:
 zuul:
   ignored-services: "*"
   routes:
-    simpleserver:
-      path: /simple-service/**
-      url: http://simpleserver:8088/
-    simpleui:
-      path: /simple-ui/**
-      url: http://simpleui:8089/
-    simpleserverui:
-      path: /simple-service-ui/**
-      url: http://simpleserverui:8090/
+    toproductms:
+      path: /pms/**
+      serviceId: productMS
+    sw2:
+      path: /swms/**
+      serviceId: sw2
+    testGA:
+      path: /testGA/**
+      serviceId: testGA
+    viewMS:
+      path: /viewMS/**
+      serviceId: viewMS
