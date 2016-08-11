@@ -27,3 +27,4 @@ zuul:
     viewMS:
       path: /viewMS/**
       serviceId: viewMS
+
