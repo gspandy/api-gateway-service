@@ -12,6 +12,15 @@ endpoints:
   health:
     sensitive: false
 
+spring:
+  mvc:
+    view:
+        prefix: /templates/
+        suffix: .ftl
+    freemarker:
+        cache: false
+        request-context-attribute: request
+
 zuul:
   ignored-services: "*"
   routes:
@@ -24,7 +33,7 @@ zuul:
     testGA:
       path: /testGA/**
       serviceId: testGA
-    viewMS:
-      path: /viewMS/**
-      serviceId: viewMS
+    s-common:
+      path: /menums/**
+      serviceId: s-common
 

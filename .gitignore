@@ -16,3 +16,4 @@ META-INF/
 classes/*
 target/
 .springBeans
+*.iml
