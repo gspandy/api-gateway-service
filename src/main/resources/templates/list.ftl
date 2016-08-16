@@ -13,46 +13,74 @@
     <script src="../static/js/react-dom.min.js"></script>
     <script src="../static/js/browser.min.js"></script>
     <script src="../static/js/JSXTransformer.js"></script>
+    <script src="../static/js/index.js"></script>
     <script src="../static/js/commonUrl.js"></script>
     <script src="../static/js/react-bootstrap.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/bootstrap-theme.css" />
+    <link href="../static/css/index.css"/>
     </head>
 <script type="text/jsx">
-const {Pagination}= ReactBootstrap;
-const PaginationAdvanced = React.createClass({
-    getInitialState() {
-        return {
-            activePage: 1
+
+    /**UserInfo AND Exit IN header**/
+    const UserInfoAndExit = (
+            <div className="UserInfoAndExit">
+                <span className="userInfo" href="#">小小红</span>
+                <span className="exit">退出</span>
+            </div>
+    );
+
+    ReactDOM.render(UserInfoAndExit, document.getElementById('header'));
+    /**UserInfo AND Exit IN header **/
+
+
+    /**pageBar START**/
+    const {Pagination}= ReactBootstrap;
+    const PaginationAdvanced = React.createClass({
+        getInitialState() {
+            return {
+                activePage: 1
+            }
+        },
+
+        handleSelect(eventKey){
+            this.setState({
+                activePage: eventKey
+            });
+        },
+
+        render() {
+            return (
+                    <div  className="pageBar">
+                        <div  className="pageTotal">
+                            <span>共999条</span>
+                            <span>1/112页</span>
+                        </div>
+                        <Pagination
+                                prev
+                                next
+                                first
+                                last
+                                ellipsis
+                                boundaryLinks
+                                items={20}
+                                maxButtons={5}
+                                activePage={this.state.activePage}
+                                onSelect={this.handleSelect} />
+                        <div className="tiaozhuan">
+                            <span>跳转到</span>
+                            <input type="text"/>
+                            <input className="go" type="submit" value="GO" placeholder="GO"/>
+                        </div>
+
+                    </div>
+            );
         }
-    },
+    });
 
-    handleSelect(eventKey) {
-        this.setState({
-            activePage: eventKey
-        });
-    },
+    ReactDOM.render(<PaginationAdvanced />, document.getElementById('footer'));
+    /** pageBar END**/
 
-    render() {
-        return (
-                <Pagination
-                        prev
-                        next
-                        first
-                        last
-                        ellipsis
-                        boundaryLinks
-                        items={20}
-                        maxButtons={5}
-                        activePage={this.state.activePage}
-                        onSelect={this.handleSelect} />
-        );
-    }
-});
-
-ReactDOM.render(<PaginationAdvanced />, document.getElementById('footer'));
-/** pageBar END**/
-    
 </script>
 <body>
 	<div id="app"></div>

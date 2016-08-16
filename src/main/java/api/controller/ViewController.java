@@ -23,7 +23,6 @@ public class ViewController {
 
     @RequestMapping("list")
     public String toView(HttpServletResponse response){
-        response.setHeader("Access-Control-Allow-Origin","*");
         return "list";
     }
 

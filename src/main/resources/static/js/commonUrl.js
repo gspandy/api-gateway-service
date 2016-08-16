@@ -12,8 +12,11 @@
 	 **/
 	
 const map = new Map();
-map.set(0,"http://localhost:10001/pms/product/list/10");
-map.set(1,"http://localhost:10001/pms/product/list/11");
-map.set(2,"http://localhost:10001/pms/product/list/12");
-map.set(3,"http://localhost:10001/pms/product/list/10");
+map.set(0,"http://192.168.2.114:10001/viewMS/view/mList");
+map.set(1,"mock/tree.json");
+map.set(2,"http://192.168.2.114:10001/viewMS/view/mList");
+const mapchild = new Map();
+mapchild.set(0,"mock/trip.json");
+mapchild.set(1,"mock/showHomework.json");
+mapchild.set(2,"mock/showLogs.json");
 
