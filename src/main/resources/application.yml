@@ -36,4 +36,7 @@ zuul:
     s-common:
       path: /menums/**
       serviceId: s-common
+    page:
+      path: /xms/**
+      serviceId: xms
 
