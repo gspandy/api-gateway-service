@@ -12,14 +12,11 @@ endpoints:
   health:
     sensitive: false
 
-spring:
-  mvc:
-    view:
-        prefix: /templates/
-        suffix: .ftl
-    freemarker:
-        cache: false
-        request-context-attribute: request
+#spring:
+#  mvc:
+#    view:
+#        prefix: /templates/
+#        suffix: .html
 
 zuul:
   ignored-services: "*"

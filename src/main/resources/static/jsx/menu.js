@@ -21,7 +21,7 @@ class Menu extends React.Component{
         this.setState({"left":data});
     };
     componentDidMount() {
-            fetch("http://192.168.0.133:10001/menums/menu/mainMenu").then((res) => {
+            fetch("http://localhost:10001/menums/menu/mainMenu").then((res) => {
             	console.log(res);
 				if(res)
 					res.json().then((obj) => {
@@ -76,7 +76,7 @@ class Left extends React.Component{
 	constructor(props) {
         super(props);
         this.state={
-            address: "http://192.168.0.133:10001/pms/product/list/10 "
+            address: "http://localhost:10001/pms/product/list/10 "
             
         }
     }
