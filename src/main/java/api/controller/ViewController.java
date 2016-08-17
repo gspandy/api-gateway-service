@@ -15,7 +15,7 @@ import java.util.List;
  * Created by pc on 2016/8/10.
  */
 @Controller
-@RequestMapping("/getway/")
+@RequestMapping("/gateway/")
 public class ViewController {
 
     @Autowired

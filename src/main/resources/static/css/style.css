@@ -1,50 +1,122 @@
 
-
 /**初始化**/
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td{margin: 0;padding: 0;}
-body{background: #fff;color: #555;font-size: 14px;font-family: microsoft YaHei, Verdana, Arial, Helvetica, sans-serif;}
-td, th, caption{font-size: 14px;}
-h1, h2, h3, h4, h5, h6{font-weight: normal;font-size: 100%;}
-address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;font-weight: normal;}
-a{color: #555;text-decoration: none;}
-a:hover{text-decoration: underline;}
-img{border: none;}
-ol, ul, li{list-style: none;}
-input, textarea, select, button{font: 14px Verdana, Helvetica, Arial, sans-serif;}
-table{border-collapse: collapse;}
-html{overflow-y: scroll;}
-.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
-.clearfix{*zoom: 1;}
-.fl{float: left;}
-.fr{float: right;}
-/**初始化**/
-
-/****/
-.body{margin:0 auto;}
-* html .body{
-    height:1%; /* So IE plays nice */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
 }
-
+body {
+    background: #fff;
+    color: #555;
+    font-size: 14px;
+    font-family: microsoft YaHei, Verdana, Arial, Helvetica, sans-serif;
+}
+td, th, caption {
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: none;
+}
+ol, ul, li {
+    list-style: none;
+}
+input, textarea, select, button {
+    font: 14px Verdana, Helvetica, Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+}
+html {
+    overflow-y: scroll;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/**初始化**/
+/****/
+.body {
+    margin:0 auto;
+}
+* html .body {
+    height:1%;
+    /* So IE plays nice*/
+}
 /**头部导航**/
-.header{
-    height:81px;
+.header {
+    position:relative;
+    height:31px;
+    margin-bottom:-31px;
     width:100%;
-    background: url(../images/Logo_01.png) #fff  no-repeat;
     overflow:hidden;
 }
 /**UserInfo And Exit 样式开始**/
-.header{  position:relative; }
-.UserInfoAndExit{  position:absolute; bottom:5px;right:5px;}
-.UserInfoAndExit span { display:inline-block;margin:5px 12px;font-weight:700;vertical-align:middle; }
-.UserInfoAndExit span:hover{ cursor:pointer;}
-.userInfo{ padding-left:22px;background:url(../images/user.jpg) no-repeat left center; background-size:20px 20px;}
-.exit{ text-decoration:underline; }
+.header {
+}
+.UserInfoAndExit {
+    position:absolute;
+    bottom:0px;
+    right:5px;
+}
+.UserInfoAndExit span {
+    display:inline-block;
+    margin:5px 12px;
+    font-weight:700;
+    vertical-align:middle;
+}
+.UserInfoAndExit span:hover {
+    cursor:pointer;
+}
+.userInfo {
+    padding-left:22px;
+    background:url(../images/user.jpg) no-repeat left center;
+    background-size:20px 20px;
+}
+.exit {
+    text-decoration:underline;
+}
 /**UserInfo And Exit 样式结束**/
-
-#topMenu>#list{width:100%;}
-#top{width:100%;height:50px;}
-#top>ul{width:100%;height:50px;}
-#top>ul>li{
+#topMenu>#list {
+    width:100%;
+    padding-left: 145px;
+    padding-top: 31px;
+    background: url(../images/Logo_01.png) no-repeat top left;
+}
+#top {
+    width:100%;
+    height:50px;
+}
+#top>ul {
+    width:100%;
+    height:50px;
+}
+#top>ul>li {
     float:left;
     display:block;
     width:25%;
@@ -53,112 +125,110 @@ html{overflow-y: scroll;}
     text-align:center;
     background:#262834;
 }
-
- #top>ul>li>a{
+#top>ul>li>a {
     display:block;
-     color:#fff;font-size:18px;font-weight:400;
-     background:#262834;
-     border:none;border-radius:0;
-     font-family:microsoft yahei;
- }
-#top>ul>li>a:hover{background:#ff7f00;}
-#top>ul>li>a.TopMemuCurr{background:#ff7f00;}
-
-#leftlist>ul{
-    float:left;width:146px;
+    color:#fff;
+    font-size:18px;
+    font-weight:400;
+    background:#262834;
+    border:none;
+    border-radius:0;
+    font-family:microsoft yahei;
+}
+#top>ul>li>a:hover {
+    background:#ff7f00;
+}
+#top>ul>li>a.TopMemuCurr {
+    background:#ff7f00;
+}
+#leftlist>ul {
+    float:left;
+    width:145px;
     border-top: 2px solid #696d78;
     border-bottom: 2px solid #696d78;
-    height:863px;height:auto !important;min-height:863px;
+    height:863px;
+    height:auto !important;
+    min-height:863px;
     background:#303440;
     overflow:hidden;
+    margin-left: -146px;
 }
-#leftlist>ul>ul{
+#leftlist>ul>ul {
     border:none;
-}#leftlist>ul>li{
-
-     border-top: 2px solid #696d78;
-     background:url("../images/leftListOpen.png") no-repeat right top;
-     background-size:146px 50px;
- }
-
-#leftlist>ul>li>a{
-   height:50px;
-   line-height:50px;
-   max-width:146px;
-   margin-top:-2px;
-   padding:1px 18px 1px 10px;
-
-   background-size:cover;
-   color:#fefefe;
-   text-align:left;
-   font-weight:normal;
-   text-overflow: ellipsis;
-   overflow:hidden;
-   white-space:nowrap;
 }
-/*#leftlist>ul>li>a:last-child{*/
-    /*border-top: 2px solid #696d78;*/
-    /*border-bottom: 2px solid #696d78;*/
-/*}*/
-#leftthree>li>a:last-child{
+#leftlist>ul>li {
+    border-top: 2px solid #696d78;
+    background:url("../images/leftListOpen.png") no-repeat right top;
+    background-size:146px 50px;
+}
+#leftlist>ul>li>a {
+    height:50px;
+    line-height:50px;
+    max-width:146px;
+    margin-top:-2px;
+    padding:1px 18px 1px 10px;
+    background-size:cover;
+    color:#fefefe;
+    text-align:left;
+    font-weight:normal;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+/*#leftlist>ul>li>a:last-child {*/
+/*border-top: 2px solid #696d78;*/
+/*border-bottom: 2px solid #696d78;*/
+/*
+}*/
+#leftthree>li>a:last-child {
     border-top: 2px solid #696d78;
     border-bottom: 2px solid #696d78;
 }
-
-
-       #leftthree>li>a{
-       	                  display:block;
-       	                  height:40px;
-                      line-height:40px;
-                       text-align:center;
-           border-top: 2px solid #696d78;
-           margin-top:-2px;
-           padding:1px 18px 1px 10px;
-           background:#303440;
-           color:#fefefe;
-                    text-decoration: none;
-       	
-       }
-
-#leftlist .rightContent{
-    margin-left:156px;
+#leftthree>li>a {
+    display:block;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border-top: 2px solid #696d78;
+    margin-top:-2px;
+    padding:1px 18px 1px 10px;
+    background:#303440;
+    color:#fefefe;
+    text-decoration: none;
+}
+#leftlist .rightContent {
+    margin-left:8px;
     padding-top:30px;
     padding-right:5px;
 }
-
-#leftlist .rightContent table{
+#leftlist .rightContent table {
     width:100%;
-
-   /*float:right;*/
+    /*float:right;*/
 }
-#leftlist .rightContent table>tbody{ width:100%;}
-
+#leftlist .rightContent table>tbody {
+    width:100%;
+}
 #leftlist .rightContent>table>thead {
-            width:100%;
-            padding-top:20px;
-            
-
-        }
-#leftlist .rightContent>table>thead>tr>th,#leftlist .rightContent>table>tbody>tr>td{
+    width:100%;
+    padding-top:20px;
+}
+#leftlist .rightContent>table>thead>tr>th,#leftlist .rightContent>table>tbody>tr>td {
     border:1px solid #000;
     text-align:center;
     padding:2px 4px;
 }
-
-#leftlist .rightContent>table>thead>tr>th{
-
+#leftlist .rightContent>table>thead>tr>th {
     height:42px;
     font-weight: 700;
     font-size:16px;
     background:#e4e4e4;
 }
-#leftlist .rightContent>table>tbody>tr>td{
-         	height:40px;
-            border:1px solid #000;
+#leftlist .rightContent>table>tbody>tr>td {
+    height:40px;
+    border:1px solid #000;
 }
-
 /**footer样式**/
-#footer{
+#footer {
     clear:both;
     position:relative;
     width:100%;
@@ -166,79 +236,163 @@ html{overflow-y: scroll;}
     /*margin-bottom: 20px;*/
     /*padding-top:4px;*/
 }
-/*#footer .btn  {*/
-    /*margin-left: 5px;*/
-/*}*/
+/*#footer .btn {*/
+/*margin-left: 5px;*/
+/*
+}*/
 /*#footer .btn-toolbar {*/
-    /*width:610px;*/
-    /*margin:0 auto;*/
-/*}*/
+/*width:610px;*/
+/*margin:0 auto;*/
+/*
+}*/
 /**页码**/
-.pageBar{ display:table-cell;   position:absolute;left:158px; bottom:65px;min-width:546px;width:auto ; height:51px;border:1px solid #ddd;border-radius:0; background:#f7f7f7;}
-.pageTotal{ float:left; margin: 8px 0; margin-top:22px;}
-.pageTotal>span{ display:inline-block; margin: 0 8px;}
-.pagination{  display:table-cell;    position:absolute;bottom:0; width:610px; margin: 8px auto;}
-.pagination>li {  display: inline-block;margin-left:5px; }
-
-.tiaozhuan{ position:absolute;top:7px;right:5px; width:142px;}
-.tiaozhuan>input{ width:50px;height:36px; border:1px solid #e7e7e7;border-radius:5px; margin-left:5px;}
-.tiaozhuan>input.go{ width:30px;}
+.pageBar {
+    display:table-cell;
+    position:absolute;
+    left:158px;
+    bottom:65px;
+    min-width:546px;
+    width:auto ;
+    height:51px;
+    border:1px solid #ddd;
+    border-radius:0;
+    background:#f7f7f7;
+}
+.pageTotal {
+    float:left;
+    margin: 8px 0;
+    margin-top:22px;
+}
+.pageTotal>span {
+    display:inline-block;
+    margin: 0 8px;
+}
+.pagination {
+    display:table-cell;
+    position:absolute;
+    bottom:0;
+    width:610px;
+    margin: 8px auto;
+}
+.pagination>li {
+    display: inline-block;
+    margin-left:5px;
+}
+.tiaozhuan {
+    position:absolute;
+    top:7px;
+    right:5px;
+    width:142px;
+}
+.tiaozhuan>input {
+    width:50px;
+    height:36px;
+    border:1px solid #e7e7e7;
+    border-radius:5px;
+    margin-left:5px;
+}
+.tiaozhuan>input.go {
+    width:30px;
+}
 /**页码**/
-
-
-
-
-
-
-@media (min-width:767px){
-    .body{ width:730px;}
-
+@media (min-width:767px) {
+    .body {
+        width:730px;
+    }
     /**右侧内容区**/
-    /*#main{  width:767px; }*/
-    .contentBox{width:767px;}
-    .table{ width:640px;margin-left: 10px;}
-
+    /*#main {
+    width:767px;
+}*/
+    .contentBox {
+        width:767px;
+    }
+    .table {
+        width:640px;
+        margin-left: 10px;
+    }
     /**页码**/
-    .pageBar{ width:580px; height:106px;}
-    .pagination{ left:2%;}
-
-
-
+    .pageBar {
+        width:580px;
+        height:106px;
+    }
+    .pagination {
+        left:2%;
+    }
 }
-@media (min-width:960px){
-    .body{ width:920px;}
-    .contentBox{width:960px;}
-    .table{ width:800px;}
+@media (min-width:960px) {
+    .body {
+        width:920px;
+    }
+    .contentBox {
+        width:960px;
+    }
+    .table {
+        width:800px;
+    }
     /**页码**/
-    .pageBar{  display:table-cell;width:88%;height:51px;}
-    .pagination{ left:20%;}
-
+    .pageBar {
+        display:table-cell;
+        width:88%;
+        height:51px;
+    }
+    .pagination {
+        left:20%;
+    }
 }
-@media (min-width:1080px){
-    .body{ width:1040px;}
-    .contentBox{width:1080px;}
-    .table{ width:900px;margin-left: 20px;}
+@media (min-width:1080px) {
+    .body {
+        width:1040px;
+    }
+    .contentBox {
+        width:1080px;
+    }
+    .table {
+        width:900px;
+        margin-left: 20px;
+    }
     /**页码**/
-    .pageBar{ width:900px;}
-
-    .pagination{ left:20%;}
-
+    .pageBar {
+        width:900px;
+    }
+    .pagination {
+        left:20%;
+    }
 }
-@media (min-width:1210px){
-    .body{ width:1180px;}
-    .contentBox{width:1210px;}
-    .table{ width:1000px;}
+@media (min-width:1210px) {
+    .body {
+        width:1180px;
+    }
+    .contentBox {
+        width:1210px;
+    }
+    .table {
+        width:1000px;
+    }
     /**页码**/
-    .pageBar{ width:896px;}
-    .pagination{ left:20%;}
-
+    .pageBar {
+        width:896px;
+    }
+    .pagination {
+        left:20%;
+    }
 }
-@media (min-width:1440px){
-    .body{ width:1400px;}
-    .contentBox{width:1440px;}
-    .table{ width:1298px;margin-left: 30px;}
+@media (min-width:1440px) {
+    .body {
+        width:1400px;
+    }
+    .contentBox {
+        width:1440px;
+    }
+    .table {
+        width:1298px;
+        margin-left: 30px;
+    }
     /**页码**/
-    .pageBar{  display:table-cell;width:88%;}
-    .pagination{ left:20%;}
-
+    .pageBar {
+        display:table-cell;
+        width:88%;
+    }
+    .pagination {
+        left:20%;
+    }
 }
